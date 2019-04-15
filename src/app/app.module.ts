@@ -27,9 +27,10 @@ import {MatCardModule} from '@angular/material/card';
 
 import { DownloadComponent } from './components/download/download.component';
 import { MapComponent } from './components/map/map.component';
+import {environment} from '../environments/environment';
 
 
-const socketIoConfig: SocketIoConfig = { url: '/', options: {} };
+const socketIoConfig: SocketIoConfig = { url: `${window.location.hostname}:${environment.api_port}/`, options: {} };
 
 @NgModule({
   declarations: [
