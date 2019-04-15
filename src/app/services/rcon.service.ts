@@ -5,13 +5,12 @@ import { RconServerInfo } from '../interfaces/serverinfo.rcon';
 
 import { merge } from 'rxjs';
 import { Socket } from 'ngx-socket-io';
-import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RconService {
-  apiURL = `http://${window.location.hostname}:${environment.api_port}/api/rcon`;
+  apiURL = `/api/rcon`;
 
   constructor(
     private httpClient: HttpClient,

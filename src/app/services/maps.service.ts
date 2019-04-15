@@ -3,14 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import {Socket} from 'ngx-socket-io';
 import {merge} from 'rxjs';
 import {Q3Map} from '../interfaces/q3map';
-import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MapsService {
 
-  apiURL = `http://${window.location.hostname}:${environment.api_port}/api/maps`;
+  apiURL = `/api/maps`;
 
   constructor(
     private httpClient: HttpClient,
