@@ -1,4 +1,6 @@
 # Q3RconWebUI
+## Frontend for [QUAKE3 Server w/ WebUI](https://github.com/kalik1/q3-server-docker-webUI)
+Quake 3 Frontend w/ websocket for interacting with [q3-server-docker-rest-api](https://github.com/kalik1/q3-server-docker-rest-api).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
